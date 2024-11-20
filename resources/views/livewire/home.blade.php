@@ -6,7 +6,7 @@
             Avanti Inter Club Indonesia. Avanti Inter Club Indonesia. Vincere per'l Internazionale.
             Forza Inter Club Indonesia.
         </p>
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-primary">Vincere</button>
         </div>
     </div>
 </div>
