@@ -5,13 +5,13 @@ use App\Http\Controllers\User\DashboardController as UserDashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
-Route::get('/', \App\Livewire\Home::class)->name('home');
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// Route::get('/', \App\Livewire\Home::class)->name('home');
+Route::get('/', function () {
+    return view('dashboard');
+});
 
-Route::get('/login', [AuthController::class, 'index'])->name('auth.login')->middleware('guest');
-Route::post('/login', [AuthController::class, 'verify'])->name('auth.verify');
+// Route::get('/login', [AuthController::class, 'index'])->name('auth.login')->middleware('guest');
+// Route::post('/login', [AuthController::class, 'verify'])->name('auth.verify');
 
 
 // Route::group(['middleware'=>'auth:admin'], function(){
